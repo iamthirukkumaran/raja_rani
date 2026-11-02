@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raja Rani — Multiplayer Party Card Game</title>
+<meta name="description" content="The classic Indian party card game, played live across every phone in the room — or across the country. One room, one code, five secret roles. The Police has to find the Thief. Free, no login.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#130321">
+<meta property="og:title" content="Raja Rani — Multiplayer Party Card Game">
+<meta property="og:description" content="One room, one code, five secret roles. The Police has to find the Thief. Free, no login, 4–5 players.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/bg-palace.webp">
+<link rel="preload" as="image" href="assets/img/logo.webp">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/img/logo.webp">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ───────── NAV ───────── -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="Raja Rani, top of page">
+      <img class="brand__mark" src="assets/img/logo.webp" alt="" width="36" height="36" decoding="async">
+      <span class="brand__name">Raja&nbsp;Rani</span>
+    </a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#roles">Characters</a>
+      <a href="#rooms">Your room</a>
+      <a href="#round">How to play</a>
+      <a href="#hunt">The hunt</a>
+      <a href="#features">Features</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--gold btn--sm" href="#get">Play free</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ═════════ HERO ═════════ -->
+<section class="hero" id="top">
+  <div class="hero__bg" aria-hidden="true">
+    <img src="assets/img/bg-palace.webp" alt="" width="619" height="1100" fetchpriority="high" decoding="async">
+  </div>
+  <div class="hero__rays" aria-hidden="true"></div>
+  <div class="hero__veil" aria-hidden="true"></div>
+
+  <div class="wrap hero__inner">
+    <img class="hero__logo reveal" src="assets/img/logo.webp" alt="Raja Rani" width="691" height="760" fetchpriority="high" decoding="async">
+
+    <h1 class="display reveal" style="--i:1">Raja Rani</h1>
+
+    <p class="lede reveal" style="--i:2">
+      The classic Indian party card game, played live across every phone in the room —
+      or across the country.
+    </p>
+
+    <div class="chips reveal" style="--i:3">
+      <span class="chip chip--gold">4–5 players</span>
+      <span class="chip chip--gold">Free</span>
+      <span class="chip">No login</span>
+      <span class="chip">Plays online</span>
+      <span class="chip">Android &amp; iOS</span>
+    </div>
+
+    <div class="hero__cta reveal" id="get" style="--i:4">
+      <a class="btn btn--gold btn--lg" href="#rooms">Start a room</a>
+      <a class="btn btn--ghost btn--lg" href="#round">How to play</a>
+    </div>
+  </div>
+
+  <!-- the cast, lined up on the palace steps -->
+  <div class="cast" aria-hidden="true">
+    <figure class="cast__fig reveal" style="--i:0"><img src="assets/img/cut-mantri.webp" alt="" width="760" height="756" decoding="async"><figcaption>Mantri</figcaption></figure>
+    <figure class="cast__fig reveal" style="--i:1"><img src="assets/img/cut-rani.webp" alt="" width="724" height="760" decoding="async"><figcaption>Rani</figcaption></figure>
+    <figure class="cast__fig cast__fig--lead reveal" style="--i:2"><img src="assets/img/cut-raja.webp" alt="" width="760" height="760" decoding="async"><figcaption>Raja</figcaption></figure>
+    <figure class="cast__fig reveal" style="--i:3"><img src="assets/img/cut-police.webp" alt="" width="632" height="760" decoding="async"><figcaption>Police</figcaption></figure>
+    <figure class="cast__fig reveal" style="--i:4"><img src="assets/img/cut-thief.webp" alt="" width="760" height="750" decoding="async"><figcaption>Thief</figcaption></figure>
+  </div>
+  <div class="hero__fade" aria-hidden="true"></div>
+</section>
+
+<!-- ═════════ PITCH ═════════ -->
+<section class="section pitch">
+  <div class="wrap">
+    <div class="pitch__grid">
+      <div>
+        <p class="eyebrow reveal">The game</p>
+        <h2 class="h2 reveal" style="--i:1">No paper. No arguments.<br>No sign-up.</h2>
+        <p class="section__lede reveal" style="--i:2">
+          Raja Rani brings the childhood paper-chit game to phones. Everyone opens the app,
+          joins one room and gets a secret role card. The Police has to find the Thief.
+          The app deals the cards, decides the outcome and keeps every score.
+        </p>
+        <ul class="pitch__points" role="list">
+          <li class="reveal" style="--i:0"><b>One code</b> gets the whole group in.</li>
+          <li class="reveal" style="--i:1"><b>Your card is yours alone</b> — nobody else can see it.</li>
+          <li class="reveal" style="--i:2"><b>The app calls it</b>, so nobody argues about who pointed first.</li>
+        </ul>
+      </div>
+      <div class="pitch__art reveal" style="--i:1">
+        <img class="pitch__deck" src="assets/img/deck.webp" alt="A fanned deck of ornate Raja Rani cards" width="619" height="620" loading="lazy" decoding="async">
+        <img class="pitch__coins" src="assets/img/coins.webp" alt="" width="620" height="499" loading="lazy" decoding="async" aria-hidden="true">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ CHARACTERS ═════════ -->
+<section class="section roles" id="roles">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow reveal">The characters</p>
+      <h2 class="h2 reveal" style="--i:1">Five cards. One of them is lying.</h2>
+      <p class="section__lede reveal" style="--i:2">
+        The Raja and the Police are announced to everyone. The other cards stay secret —
+        tap a card to turn it over.
+      </p>
+    </header>
+
+    <div class="deckgrid" id="deckgrid">
+
+      <button class="flip reveal" type="button" aria-pressed="false" style="--i:0" data-role="raja">
+        <span class="flip__inner">
+          <span class="flip__face flip__back">
+            <img src="assets/img/card-back.webp" alt="" width="493" height="700" loading="lazy" decoding="async">
+            <span class="flip__hint">Tap to reveal</span>
+          </span>
+          <span class="flip__face flip__front">
+            <img src="assets/img/role-raja.webp" alt="" width="640" height="640" loading="lazy" decoding="async">
+            <span class="rolecard__pts">+100</span>
+            <span class="rolecard__text">
+              <b class="rolecard__name">Raja</b>
+              <span class="rolecard__sub">the king</span>
+              <span class="rolecard__note">+100 every round</span>
+            </span>
+          </span>
+        </span>
+      </button>
+
+      <button class="flip reveal" type="button" aria-pressed="false" style="--i:1" data-role="rani">
+        <span class="flip__inner">
+          <span class="flip__face flip__back">
+            <img src="assets/img/card-back.webp" alt="" width="493" height="700" loading="lazy" decoding="async">
+            <span class="flip__hint">Tap to reveal</span>
+          </span>
+          <span class="flip__face flip__front">
+            <img src="assets/img/role-rani.webp" alt="" width="640" height="640" loading="lazy" decoding="async">
+            <span class="rolecard__pts">+50</span>
+            <span class="rolecard__text">
+              <b class="rolecard__name">Rani</b>
+              <span class="rolecard__sub">the queen</span>
+              <span class="rolecard__note">+50 every round</span>
+            </span>
+          </span>
+        </span>
+      </button>
+
+      <button class="flip reveal" type="button" aria-pressed="false" style="--i:2" data-role="mantri">
+        <span class="flip__inner">
+          <span class="flip__face flip__back">
+            <img src="assets/img/card-back.webp" alt="" width="493" height="700" loading="lazy" decoding="async">
+            <span class="flip__hint">Tap to reveal</span>
+          </span>
+          <span class="flip__face flip__front">
+            <img src="assets/img/role-mantri.webp" alt="" width="640" height="640" loading="lazy" decoding="async">
+            <span class="rolecard__pts">+30</span>
+            <span class="rolecard__text">
+              <b class="rolecard__name">Mantri</b>
+              <span class="rolecard__sub">the minister</span>
+              <span class="rolecard__note">+30 · 5 players only</span>
+            </span>
+          </span>
+        </span>
+      </button>
+
+      <button class="flip reveal" type="button" aria-pressed="false" style="--i:3" data-role="police">
+        <span class="flip__inner">
+          <span class="flip__face flip__back">
+            <img src="assets/img/card-back.webp" alt="" width="493" height="700" loading="lazy" decoding="async">
+            <span class="flip__hint">Tap to reveal</span>
+          </span>
+          <span class="flip__face flip__front">
+            <img src="assets/img/role-police.webp" alt="" width="640" height="640" loading="lazy" decoding="async">
+            <span class="rolecard__pts">+10 / 0</span>
+            <span class="rolecard__text">
+              <b class="rolecard__name">Police</b>
+              <span class="rolecard__sub">finds the Thief</span>
+              <span class="rolecard__note">+10 if caught, 0 if wrong</span>
+            </span>
+          </span>
+        </span>
+      </button>
+
+      <button class="flip reveal" type="button" aria-pressed="false" style="--i:4" data-role="thief">
+        <span class="flip__inner">
+          <span class="flip__face flip__back">
+            <img src="assets/img/card-back.webp" alt="" width="493" height="700" loading="lazy" decoding="async">
+            <span class="flip__hint">Tap to reveal</span>
+          </span>
+          <span class="flip__face flip__front">
+            <img src="assets/img/role-thief.webp" alt="" width="640" height="640" loading="lazy" decoding="async">
+            <span class="rolecard__pts">0 / +10</span>
+            <span class="rolecard__text">
+              <b class="rolecard__name">Thief</b>
+              <span class="rolecard__sub">stays hidden</span>
+              <span class="rolecard__note">+10 if escaped, 0 if caught</span>
+            </span>
+          </span>
+        </span>
+      </button>
+    </div>
+
+    <p class="deckgrid__foot reveal">
+      <button class="btn btn--ghost btn--sm" type="button" id="flipAll">Reveal all</button>
+      <span>Each role lands with its own moment — a crown drops, petals fall, a siren flashes, smoke puffs.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ═════════ ROOMS ═════════ -->
+<section class="section rooms" id="rooms">
+  <div class="rooms__bg" aria-hidden="true">
+    <img src="assets/img/bg-hall.webp" alt="" width="619" height="1100" loading="lazy" decoding="async">
+  </div>
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow reveal">Your room</p>
+      <h2 class="h2 reveal" style="--i:1">Six letters. Everybody's in.</h2>
+    </header>
+
+    <div class="rooms__grid">
+      <div class="rooms__tiles">
+        <article class="tile reveal" style="--i:0">
+          <img class="tile__art" src="assets/img/door.webp" alt="" width="700" height="680" loading="lazy" decoding="async">
+          <div>
+            <h3>Create</h3>
+            <p>Room name, 4 or 5 players, 5–20 rounds. The creator shuffles first.</p>
+          </div>
+        </article>
+        <article class="tile reveal" style="--i:1">
+          <img class="tile__art" src="assets/img/key.webp" alt="" width="533" height="620" loading="lazy" decoding="async">
+          <div>
+            <h3>Join</h3>
+            <p>Type the 6-character code, scan the host's QR, or tap a shared invite.</p>
+            <span class="codepill" aria-hidden="true"><b>R</b><b>J</b><b>7</b><b>K</b><b>2</b><b>M</b></span>
+          </div>
+        </article>
+        <article class="tile reveal" style="--i:2">
+          <img class="tile__art" src="assets/img/deck.webp" alt="" width="619" height="620" loading="lazy" decoding="async">
+          <div>
+            <h3>Lobby</h3>
+            <p>Players pop in around the royal table. Empty seats show a throne until somebody takes them.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- the royal table, live -->
+      <div class="rooms__device reveal" style="--i:1">
+        <div class="device" id="heroDevice">
+          <div class="device__screen">
+            <div class="lobby">
+              <div class="lobby__top">
+                <span class="roomchip"><span class="roomchip__dot"></span>RJ7K2M</span>
+                <span class="roomchip roomchip--ghost">Round 1 / 10</span>
+              </div>
+              <p class="lobby__wait">Waiting for 1 more player…</p>
+              <div class="table" role="img" aria-label="Five seats around a royal table — four players joined, one empty throne, with the deck in the middle.">
+                <div class="table__rim"></div>
+                <div class="table__felt"></div>
+                <img class="deck-img" src="assets/img/deck.webp" alt="" width="619" height="620" loading="lazy" decoding="async">
+                <div class="seat seat--host" style="--a:0deg"><span class="ava">SU<i class="ava__host" aria-hidden="true"><svg viewBox="0 0 24 24" width="11" height="11"><path d="M3.4 17 1.6 7l5.2 3.8L12 3.6l5.2 7.2L22.4 7l-1.8 10z" fill="currentColor"/></svg></i></span><b>Suriya</b></div>
+                <div class="seat" style="--a:72deg"><span class="ava" data-c="2">AR</span><b>Arun</b></div>
+                <div class="seat" style="--a:144deg"><span class="ava" data-c="3">DI</span><b>Divya</b></div>
+                <div class="seat seat--empty" style="--a:216deg">
+                  <span class="ava ava--throne" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M6 9V5a2 2 0 114 0v4h4V5a2 2 0 114 0v4h1v7a3 3 0 01-3 3H8a3 3 0 01-3-3V9z" opacity=".6"/></svg>
+                  </span><b>Empty</b>
+                </div>
+                <div class="seat" style="--a:288deg"><span class="ava" data-c="4">KA</span><b>Kavi</b></div>
+              </div>
+
+              <div class="lobby__rounds" aria-hidden="true">
+                <span class="lr__label">Rounds</span>
+                <span class="lr">5</span><span class="lr is-on">10</span><span class="lr">15</span><span class="lr">20</span>
+              </div>
+              <div class="lobby__foot">
+                <span class="lobby__meta">4 of 5 seated</span>
+                <span class="lobby__btn">Start game</span>
+              </div>
+            </div>
+          </div>
+          <div class="device__glare" aria-hidden="true"></div>
+        </div>
+        <div class="device__shadow" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ HOW A ROUND WORKS ═════════ -->
+<section class="section" id="round">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow reveal">How a round works</p>
+      <h2 class="h2 reveal" style="--i:1">Shuffle, reveal, hunt,<br>verdict, score.</h2>
+    </header>
+
+    <ol class="steps" role="list">
+      <li class="step reveal" style="--i:0">
+        <img class="step__art" src="assets/img/deck.webp" alt="" width="619" height="620" loading="lazy" decoding="async">
+        <span class="step__n">1</span><h3>Shuffle</h3>
+        <p>The player whose turn it is taps the deck. Cards spin on every phone at once.</p>
+      </li>
+      <li class="step reveal" style="--i:1">
+        <img class="step__art" src="assets/img/card-back.webp" alt="" width="493" height="700" loading="lazy" decoding="async">
+        <span class="step__n">2</span><h3>Reveal</h3>
+        <p>Each player taps to flip their own secret card in 3D. Only you see yours.</p>
+      </li>
+      <li class="step reveal" style="--i:2">
+        <img class="step__art" src="assets/img/cut-police-think.webp" alt="" width="721" height="760" loading="lazy" decoding="async">
+        <span class="step__n">3</span><h3>Hunt</h3>
+        <p>The Police sees every suspect except the Raja, taps one, then taps <b>CATCH!</b></p>
+      </li>
+      <li class="step reveal" style="--i:3">
+        <img class="step__art" src="assets/img/cut-thief.webp" alt="" width="760" height="750" loading="lazy" decoding="async">
+        <span class="step__n">4</span><h3>Verdict</h3>
+        <p>The app checks the deal and stamps <b>CAUGHT</b> or <b>ESCAPED</b>. No arguing.</p>
+      </li>
+      <li class="step reveal" style="--i:4">
+        <img class="step__art" src="assets/img/coins.webp" alt="" width="620" height="499" loading="lazy" decoding="async">
+        <span class="step__n">5</span><h3>Score</h3>
+        <p>Points count up and the shuffle passes to the next player.</p>
+      </li>
+    </ol>
+
+    <div class="scorewrap">
+      <div class="scorewrap__copy reveal">
+        <h3 class="h3">The scoring table</h3>
+        <p>The host chooses <b>5, 10, 15 or 20 rounds</b>. After the last round, the highest total wins. Only the Police and the Thief have anything at stake.</p>
+      </div>
+      <table class="matrix reveal" style="--i:1">
+        <caption class="sr-only">Points per role by outcome</caption>
+        <thead>
+          <tr><th scope="col">Role</th><th scope="col">Thief caught</th><th scope="col">Thief escaped</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row"><img src="assets/img/role-raja.webp" alt="" width="640" height="640" loading="lazy" decoding="async">Raja</th><td>+100</td><td>+100</td></tr>
+          <tr><th scope="row"><img src="assets/img/role-rani.webp" alt="" width="640" height="640" loading="lazy" decoding="async">Rani</th><td>+50</td><td>+50</td></tr>
+          <tr><th scope="row"><img src="assets/img/role-mantri.webp" alt="" width="640" height="640" loading="lazy" decoding="async">Mantri</th><td>+30</td><td>+30</td></tr>
+          <tr class="is-live"><th scope="row"><img src="assets/img/role-police.webp" alt="" width="640" height="640" loading="lazy" decoding="async">Police</th><td class="win">+10</td><td class="lose">0</td></tr>
+          <tr class="is-live"><th scope="row"><img src="assets/img/role-thief.webp" alt="" width="640" height="640" loading="lazy" decoding="async">Thief</th><td class="lose">0</td><td class="win">+10</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ THE HUNT ═════════ -->
+<section class="section hunt" id="hunt">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow reveal">The hunt</p>
+      <h2 class="h2 reveal" style="--i:1">Police picks.<br>The app decides.</h2>
+      <p class="section__lede reveal" style="--i:2">
+        Nobody has to point across a room or confirm by voice — so the game works just as
+        well with everyone on the same sofa or spread across the country.
+      </p>
+    </header>
+
+    <div class="trio">
+      <article class="tile tile--hunt reveal" style="--i:0">
+        <span class="stamp stamp--ask" aria-hidden="true">WHO?</span>
+        <img class="hunt__art" src="assets/img/cut-police-think.webp" alt="The Police scratching his head, deciding who to accuse" width="721" height="760" loading="lazy" decoding="async">
+        <h3>Who's the Thief?</h3>
+        <p>The Police taps a suspect, then <b>CATCH!</b></p>
+        <div class="suspects" aria-hidden="true">
+          <span class="sus">AR</span><span class="sus is-picked">DI</span><span class="sus">KA</span>
+        </div>
+      </article>
+      <article class="tile tile--hunt reveal" style="--i:1">
+        <span class="stamp stamp--caught" aria-hidden="true">CAUGHT</span>
+        <img class="hunt__art" src="assets/img/cut-police.webp" alt="The Police giving a thumbs up" width="632" height="760" loading="lazy" decoding="async">
+        <h3>Caught!</h3>
+        <p>Police <b>+10</b>, Thief <b>0</b>. Gold burst and a success chime.</p>
+      </article>
+      <article class="tile tile--hunt reveal" style="--i:2">
+        <span class="stamp stamp--escaped" aria-hidden="true">ESCAPED</span>
+        <img class="hunt__art" src="assets/img/cut-thief.webp" alt="The Thief grinning with a swag bag over his shoulder" width="760" height="750" loading="lazy" decoding="async">
+        <h3>Escaped!</h3>
+        <p>Thief <b>+10</b>, Police <b>0</b>. The screen shakes and the real Thief is shown.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ WINNER ═════════ -->
+<section class="section winner" id="winner">
+  <div class="winner__glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="winner__grid">
+      <figure class="winner__art reveal">
+        <img class="winner__raja" src="assets/img/raja-winner.webp" alt="The Raja holding a golden trophy aloft in victory" width="747" height="792" loading="lazy" decoding="async">
+        <img class="winner__coins" src="assets/img/coins.webp" alt="" width="620" height="499" loading="lazy" decoding="async" aria-hidden="true">
+      </figure>
+
+      <div class="winner__copy">
+        <p class="eyebrow reveal">The last round</p>
+        <h2 class="h2 reveal" style="--i:1">Crown the winner.</h2>
+        <p class="section__lede reveal" style="--i:2">
+          A podium rises for 1st, 2nd and 3rd, a crown drops on the winner, and fireworks
+          and confetti fill the screen. The host can start a rematch in the same room, and
+          every finished game is saved to each player's history and stats.
+        </p>
+
+        <div class="podium-wrap reveal" style="--i:1">
+          <div class="podium" id="podium" role="img" aria-label="A three-place podium: Suriya first with 620 points, Arun second with 430, Divya third with 380.">
+            <div class="pod pod--2"><span class="ava" data-c="2">AR</span><b>Arun</b><em data-count="430">0</em><i>2</i></div>
+            <div class="pod pod--1">
+              <img class="pod__trophy" src="assets/img/trophy.webp" alt="" width="553" height="620" loading="lazy" decoding="async">
+              <span class="ava">SU</span><b>Suriya</b><em data-count="620">0</em><i>1</i>
+            </div>
+            <div class="pod pod--3"><span class="ava" data-c="3">DI</span><b>Divya</b><em data-count="380">0</em><i>3</i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ FEATURES ═════════ -->
+<section class="section" id="features">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow reveal">Features</p>
+      <h2 class="h2 reveal" style="--i:1">Everything in the box.</h2>
+    </header>
+
+    <div class="bento">
+      <article class="card reveal" style="--i:0">
+        <h3 class="card__title"><span class="card__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M4 20V9l8-5 8 5v11z"/><path fill="none" stroke="currentColor" stroke-width="1.9" d="M10 20v-6h4v6"/></svg>
+        </span>Rooms</h3>
+        <ul role="list">
+          <li>Create with room name, player count and rounds</li>
+          <li>Join by 6-character code, QR scan or shared invite</li>
+          <li>Host starts the game; rematch in the same room</li>
+          <li>Rejoin banner if the app closes mid-game</li>
+        </ul>
+      </article>
+
+      <article class="card reveal" style="--i:1">
+        <h3 class="card__title"><span class="card__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16"><rect x="3" y="5" width="12" height="16" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M17 7.4 20.6 8.7a2 2 0 011.2 2.6l-3.4 9" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+        </span>Gameplay</h3>
+        <ul role="list">
+          <li>Live shuffle animation on every phone</li>
+          <li>Private 3D card reveal</li>
+          <li>Police picks the suspect in the app</li>
+          <li>Automatic caught / escaped verdict</li>
+          <li>Shuffle turn rotates every round</li>
+        </ul>
+      </article>
+
+      <article class="card reveal" style="--i:2">
+        <h3 class="card__title"><span class="card__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M4 20h16M7 20v-7M12 20V5M17 20v-5"/></svg>
+        </span>Scores</h3>
+        <ul role="list">
+          <li>Animated score counters</li>
+          <li>Round result showing every role</li>
+          <li>Scoreboard sheet at any time</li>
+          <li>Podium final ranking with tie handling</li>
+        </ul>
+      </article>
+
+      <article class="card reveal" style="--i:0">
+        <h3 class="card__title"><span class="card__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="8.4" r="4" fill="none" stroke="currentColor" stroke-width="1.9"/><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M4.6 20a7.4 7.4 0 0114.8 0"/></svg>
+        </span>Player</h3>
+        <ul role="list">
+          <li>No login — just type a name</li>
+          <li>Initials avatar</li>
+          <li>Stats: games, wins and points</li>
+          <li>Full game history</li>
+        </ul>
+      </article>
+
+      <article class="card reveal" style="--i:1">
+        <h3 class="card__title"><span class="card__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M12 3.2l2.6 5.6 6 .8-4.4 4.3 1.1 6.1L12 17.1 6.7 20l1.1-6.1L3.4 9.6l6-.8z"/></svg>
+        </span>Look &amp; feel</h3>
+        <ul role="list">
+          <li>Painted palace backgrounds and character art</li>
+          <li>Cards that lift and tilt under your finger</li>
+          <li>Per-role effects, 17 sound effects and haptics</li>
+          <li>Responsive on phones and tablets</li>
+        </ul>
+      </article>
+
+      <article class="card reveal" style="--i:2">
+        <h3 class="card__title"><span class="card__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.9"/><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M12 3v2.4M12 18.6V21M21 12h-2.4M5.4 12H3M18.4 5.6l-1.7 1.7M7.3 16.7l-1.7 1.7M18.4 18.4l-1.7-1.7M7.3 7.3 5.6 5.6"/></svg>
+        </span>Settings</h3>
+        <ul role="list">
+          <li>Sound and vibration toggles</li>
+          <li>Change name, how to play</li>
+          <li>Privacy and terms links</li>
+          <li>Delete my data</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ CTA / NEXT ═════════ -->
+<section class="section next">
+  <div class="wrap wrap--narrow next__inner">
+    <div class="next__glow" aria-hidden="true"></div>
+    <img class="next__logo reveal" src="assets/img/logo.webp" alt="" width="691" height="760" loading="lazy" decoding="async" aria-hidden="true">
+    <h2 class="h2 reveal" style="--i:1">Get the crew together.</h2>
+    <p class="lede reveal" style="--i:2">Four or five players. One code. Free, no ads, no login.</p>
+    <div class="hero__cta reveal" style="--i:3">
+      <a class="btn btn--gold btn--lg" href="#">Get it on Google Play</a>
+      <a class="btn btn--ghost btn--lg" href="#">Download on the App Store</a>
+    </div>
+
+    <h3 class="next__title reveal">Still being dealt</h3>
+    <ul class="nextlist" role="list">
+      <li class="reveal" style="--i:0"><span class="nextlist__dot" aria-hidden="true"></span>Hunt timer for faster online rounds</li>
+      <li class="reveal" style="--i:1"><span class="nextlist__dot" aria-hidden="true"></span>Emoji reactions for remote bluffing</li>
+      <li class="reveal" style="--i:2"><span class="nextlist__dot" aria-hidden="true"></span>Tamil and Hindi labels</li>
+      <li class="reveal" style="--i:3"><span class="nextlist__dot" aria-hidden="true"></span>App Store and Play Store launch</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <a class="brand brand--sm" href="#top">
+      <img class="brand__mark" src="assets/img/logo.webp" alt="" width="30" height="30" loading="lazy" decoding="async">
+      <span class="brand__name">Raja Rani</span>
+    </a>
+    <p class="footer__legal">A multiplayer party card game for 4–5 players · Android and iOS</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
