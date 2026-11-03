@@ -19,6 +19,7 @@ python3 -m http.server 8000
 | Path | What it is |
 | --- | --- |
 | `index.html` | The whole page |
+| `privacy.html` | Privacy policy — the URL the App Store and Play Console ask for |
 | `styles.css` | Tokens, layout, components, responsive and reduced-motion rules |
 | `app.js` | Scroll reveal, the 3D card flip, podium counters, pointer tilt |
 | `assets/img/` | Web-ready WebP art (characters, props, backgrounds, card back) |
@@ -43,4 +44,5 @@ background.
 ## Still to do
 
 - The store buttons are `#` placeholders pending the App Store and Play Store listings.
+- Terms of service is not written yet; the app's Settings screen links to it.
 - Sample names, codes and scores in the mock screens are illustrative, not real data.

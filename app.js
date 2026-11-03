@@ -25,6 +25,36 @@
     onScroll();
   }
 
+  /* ---------- 1b. Legal pages: the contents rail folds away on small screens ---------- */
+
+  var toc = document.getElementById('toc');
+  if (toc) {
+    // Open is the no-JS default, which is right on desktop and merely long on a
+    // phone — so JS only ever has to close it.
+    var narrowMQ = window.matchMedia('(max-width: 900px)');
+    var syncToc = function () { toc.open = !narrowMQ.matches; };
+    syncToc();
+    narrowMQ.addEventListener('change', syncToc);
+    // Deep links (privacy.html#delete is printed in the app and in the store
+    // listings) land before the fold-away and before the webfonts swap in, so
+    // the heading drifts out from under the nav. Put it back once both settle.
+    if (window.location.hash.length > 1) {
+      var target = document.getElementById(window.location.hash.slice(1));
+      if (target) {
+        var settle = function () {
+          var top = target.getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({ top: Math.max(top, 0), behavior: 'auto' });
+        };
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(settle);
+        else window.addEventListener('load', settle);
+      }
+    }
+    // Jumping to a section on a phone should put the list away behind you.
+    toc.addEventListener('click', function (e) {
+      if (narrowMQ.matches && e.target.closest('a')) toc.open = false;
+    });
+  }
+
   /* ---------- 2. Scroll reveal (once, staggered) ---------- */
 
   var revealables = document.querySelectorAll('.reveal');
