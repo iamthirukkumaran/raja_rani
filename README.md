@@ -20,6 +20,7 @@ python3 -m http.server 8000
 | --- | --- |
 | `index.html` | The whole page |
 | `privacy.html` | Privacy policy — the URL the App Store and Play Console ask for |
+| `legal.css`, `legal.js` | Styles and behaviour for the policy page only |
 | `styles.css` | Tokens, layout, components, responsive and reduced-motion rules |
 | `app.js` | Scroll reveal, the 3D card flip, podium counters, pointer tilt |
 | `assets/img/` | Web-ready WebP art (characters, props, backgrounds, card back) |
